@@ -29,7 +29,7 @@ npm run build
 ```
 # Two types of Vue API
  ## Option API & Composition API (Modern)
-In Option API- Both has export default and here data() method return an object. 
+Both API-  has export default without 'script setup' and here data() method return an object. 
   ## example 
 ```sh 
 <script>
@@ -70,4 +70,16 @@ import { ref } from 'vue';
     const instructor = ref('Md Rasel Ahmed')
     let count = ref(0)
 </script>
+```
+## template
+```sh
+<template>
+  <div class="text-center" > 
+    <h2 class="text-xl font-semibold py-5">Course Name: {{ courseName   }}</h2>
+    <p class="text-2xl">Instructor: {{ instructor }}</p>
+    <button @click="count++" class="text-3xl font-bold inline py-2 px-4 bg-gray-200 shadow">+</button>
+        <h1 class="font-bold text-3xl">Count Number: {{ count }}</h1>
+    <button v-if="count > 0" @click="count--" class="text-3xl font-bold inline py-2 px-4 bg-gray-300 shadow">-</button>
+  </div>
+</template>
 ```

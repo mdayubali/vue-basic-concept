@@ -1,0 +1,7 @@
+ref() is related to the state change of variable and way of defining the variable value in primitive data types. ref is most important for setup() method or <script setup>.Without ref() the reactivity won’t work. ref() will be used when the data types are primitive (number, string, boolean, NULL,).
+If I want to reassign the value or property of a variable then have to access like let a = 10 , reassign the value like as  a.value = 33
+reactive() is same as like the ref(). reactive() is used for non-primitive  data types (like Object). Though now a days, array is also called non-primitive data type.
+If I want to reassign or change the value of an object property then have to access only the property name like objectpropertyname.name=”your text”. No need to access the value with name.
+man= reactive({fname: ‘md ayub’})
+man.fname = “Md Ayub Ali”
+State means in react or vue, the value of variable, array, function ,object etc, In a Word, Change the value of data types.

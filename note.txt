@@ -5,3 +5,11 @@ If I want to reassign or change the value of an object property then have to acc
 man= reactive({fname: ‘md ayub’})
 man.fname = “Md Ayub Ali”
 State means in react or vue, the value of variable, array, function ,object etc, In a Word, Change the value of data types.
+
+# non reactive data transfer: Simple like as javascript 
+# mount() method inject the component or files
+
+# Two Way data binding: v-model 
+if you want to take input data in browser from the user 
+then you can use the v-model data binding
+
